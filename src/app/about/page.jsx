@@ -1,11 +1,16 @@
 import React from "react";
 
-const About = () => {
+export const metadata = {
+  title: "About | CODE JAX",
+  description:
+    "Discover the team behind CODE JAX. Passionate developers and designers building cutting-edge technology solutions.",
+};
+const AboutPage = () => {
   return (
-    <div>
-      <h1>THIS ABOUT</h1>
+    <div className="p-4">
+      <h1 className="text-2xl font-bold">About Page</h1>
     </div>
   );
 };
 
-export default About;
+export default AboutPage;
