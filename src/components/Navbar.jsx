@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="w-screen flex justify-center mt-6 overflow-visible">
-      <nav className="bg-old-green text-white pl-8 flex justify-between items-center w-[95%] rounded-md relative overflow-visible">
+    <div className="flex justify-center mt-6 overflow-visible">
+      <nav className="relative w-full bg-old-green text-white pl-8 flex justify-between items-center rounded-md overflow-visible">
         <div className="flex items-center">
           <svg
             height="28"
