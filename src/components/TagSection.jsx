@@ -1,6 +1,6 @@
 const TagSection = ({ title }) => {
   return (
-    <div className="flex justify-center items-center mb-10">
+    <div className="flex justify-center items-center mb-5">
       <div className="w-[200px] h-[45px] bg-[rgba(167,167,167,0.17)] flex justify-center items-center gap-3 rounded-md m- auto">
         <span className="font-helvetica font-bold text-[#B7FF00] text-[18px]">
           {title}
