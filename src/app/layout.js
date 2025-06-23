@@ -9,8 +9,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>
-        <Navbar />
+      <body className={`antialiased overflow-hidden`}>
+        {/* <Navbar /> */}
         <main>{children}</main>
       </body>
     </html>

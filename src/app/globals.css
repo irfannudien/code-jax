@@ -11,6 +11,7 @@
   --font-helvetica: Helvetica, sans-serif;
   --color-old-green: #204635;
   --color-black-sabbath: #0d1213;
+  --animate-marquee-scroll: scroll 20s linear infinite;
 }
 
 /* @theme inline {
@@ -36,3 +37,17 @@ body {
 /* button svg path:hover {
   filter: drop-shadow(0 0 2px #b9f916);
 } */
+
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-350px*8));
+    }
+}
+
+.pause:hover{
+  animation-play-state: paused;
+}
