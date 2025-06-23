@@ -9,8 +9,11 @@
 
 @theme {
   --font-helvetica: Helvetica, sans-serif;
+  --color-primary-white: #f4f4f4;
   --color-old-green: #204635;
   --color-black-sabbath: #0d1213;
+  --color-badges: rgba(167, 167, 167, 0.2);
+  --color-lime: #b7ff00;
 }
 
 /* @theme inline {
