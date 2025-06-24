@@ -1,6 +1,9 @@
 import ButtonHome from "@/components/ButtonHome";
 import CounterBox from "@/components/CounterBox";
+import Review from "@/components/landing/Review";
 import Image from "next/image";
+import Footer from "@/components/landing/Footer";
+
 import React from "react";
 import { IoArrowRedo } from "react-icons/io5";
 
@@ -53,8 +56,8 @@ const HomePage = () => {
             <Image
               src="https://res.cloudinary.com/dad9qhbnx/image/upload/v1750665684/landing_img.png"
               alt="codejax.com"
-              width={300}
-              height={200}
+              width={500}
+              height={500}
               className="w-full"
             />
           </div>
@@ -63,23 +66,10 @@ const HomePage = () => {
         </div>
       </div>
       <section>
-        <div className="flex justify-center items-center">
-          <div className="w-[95%] h-[300px] bg-[rgba(167,167,167,0.17)] flex-row justify-center items-center rounded-md">
-            <TagSection title="Testimonials" />
-            <h1 className="text-white text-center text-[55px] font-bold mb-5">
-              What Our Clients Says
-            </h1>
-            <p className="text-white text-center text-[20px]">
-              Kami percaya, kepercayaan dibangun dari hasil dan pengalaman.
-              <br />
-              Berikut adalah beberapa tanggapan langsung dari klien yang telah
-              bekerja sama dengan Code Jax.
-              <br /> Dari sekolah, UMKM, hingga brand pribadi — mereka merasakan
-              sendiri kualitas layanan kami: komunikatif, efisien, dan bisa
-              diandalkan.
-            </p>
-          </div>
-        </div>
+        <Review />
+      </section>
+      <section>
+        <Footer />
       </section>
     </>
   );
