@@ -32,7 +32,12 @@
 }
 
 body {
-  background: var(--color-black-sabbath);
+  background-image: url(../../public/Assets/Background.svg);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: top;
+  /* background: var(--color-black-sabbath); */
   /* color: var(--foreground); */
   font-family: Arial, Helvetica, sans-serif;
 }
