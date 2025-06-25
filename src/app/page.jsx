@@ -1,4 +1,7 @@
-import WorkSection from "@/components/WorkSection";
+import Hero from "@/components/landing/Hero";
+import Review from "@/components/landing/Review";
+import Footer from "@/components/landing/Footer";
+
 import React from "react";
 
 export const metadata = {
@@ -9,10 +12,17 @@ export const metadata = {
 
 const HomePage = () => {
   return (
-    <div className="p-8 overflow-hidden">
-      <h1 className="text-2xl font-bold">Home Page</h1>
-      <WorkSection />
-    </div>
+    <>
+      <section>
+        <Hero />
+      </section>
+      <section>
+        <Review />
+      </section>
+      <section>
+        <Footer />
+      </section>
+    </>
   );
 };
 
