@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <>
       <section>
-        <Hero />
+        <Hero /> {/*ini home page*/}
       </section>
       <section>
         <Review />
