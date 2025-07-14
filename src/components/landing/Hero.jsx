@@ -5,10 +5,10 @@ import { IoArrowRedo } from "react-icons/io5";
 
 const Hero = () => {
   return (
-    <div className="flex gap-10 items-center">
-      <div className="flex flex-col w-[40%] gap-10">
-        <div className="flex flex-col gap-10">
-          <h1 className="text-6xl text-primary-white font-bold leading-20">
+    <div className="flex flex-col md:flex-row gap-10 items-center">
+      <div className="md:w-1/2">
+        <div className="flex flex-col gap-5 lg:gap-10">
+          <h1 className="text-4xl lg:text-6xl text-primary-white font-bold leading-10 lg:leading-20">
             <span className="text-[#5FCE66]">Ngoding?</span> <br /> Serahin aja,
             kami kuat
           </h1>
@@ -18,7 +18,7 @@ const Hero = () => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <div>
+          <div className="flex gap-4">
             <ButtonHome
               fillColor="#CFFFB1"
               className="scale-x-[-1] scale-y-[-1] "
@@ -40,17 +40,16 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-[60%] relative">
+      <div className="md:w-1/2 relative flex justify-center">
         <div className="w-full">
           <Image
             src="https://res.cloudinary.com/dad9qhbnx/image/upload/v1750665684/landing_img.png"
             alt="codejax.com"
             width={500}
             height={500}
-            className="w-full"
+            className="w-full h-auto"
           />
         </div>
-
         <CounterBox />
       </div>
     </div>
