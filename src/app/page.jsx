@@ -1,4 +1,6 @@
+import Head from "next/head";
 import Hero from "@/components/landing/Hero";
+import Services from "@/components/landing/Services";
 import Review from "@/components/landing/Review";
 import Footer from "@/components/landing/Footer";
 
@@ -15,6 +17,9 @@ const HomePage = () => {
     <>
       <section>
         <Hero /> {/*ini home page*/}
+      </section>
+      <section>
+        <Services/>
       </section>
       <section>
         <Review />
