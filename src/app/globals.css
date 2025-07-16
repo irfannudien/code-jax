@@ -55,6 +55,22 @@ body {
   text-align: center;
 }
 
+.title {
+  font-size : 55px;
+  font-weight : bold;
+  color : white;
+  text-align : center;
+  margin-top: 10px;
+  margin-bottom : 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 /* button svg path:hover {
   filter: drop-shadow(0 0 2px #b9f916);
 } */
