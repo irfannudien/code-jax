@@ -31,12 +31,10 @@ const reviewer = [
 const Review = () => {
   return (
     <div className="flex justify-center items-center mt-10">
-      <div className="w-full h-full bg-[rgba(167,167,167,0.05)] flex-row justify-center items-center rounded-md">
+      <div className="-mx-20 h-full bg-[rgba(167,167,167,0.05)] flex-row justify-center items-center rounded-md">
         <TagSection title="Testimonials" />
-        <h1 className="text-white text-center text-[55px] font-bold mb-5">
-          What Our Clients Says
-        </h1>
-        <p className="text-white text-center text-[20px]">
+        <h1 className="section-title">What Our Clients Says</h1>
+        <p className="section-desc">
           Kami percaya, kepercayaan dibangun dari hasil dan pengalaman.
           <br />
           Berikut adalah beberapa tanggapan langsung dari klien yang telah

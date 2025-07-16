@@ -41,6 +41,19 @@ body {
   /* color: var(--foreground); */
   font-family: Arial, Helvetica, sans-serif;
 }
+.section-title {
+  color: white;
+  font-size: 55px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+.section-desc {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
 
 /* button svg path:hover {
   filter: drop-shadow(0 0 2px #b9f916);

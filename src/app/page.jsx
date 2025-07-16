@@ -1,8 +1,10 @@
 import Hero from "@/components/landing/Hero";
+
 import Review from "@/components/landing/Review";
 import Footer from "@/components/landing/Footer";
 
 import React from "react";
+import OurServices from "@/components/landing/OurServices";
 
 export const metadata = {
   title: "Home | CODE JAX",
@@ -15,6 +17,9 @@ const HomePage = () => {
     <>
       <section>
         <Hero />
+      </section>
+      <section>
+        <OurServices />
       </section>
       <section>
         <Review />
