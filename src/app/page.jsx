@@ -19,7 +19,7 @@ const HomePage = () => {
         <Hero /> {/*ini home page*/}
       </section>
       <section>
-        <Services/>
+        <Services />
       </section>
       <section>
         <Review />

@@ -1,19 +1,39 @@
+import Image from "next/image";
+
 const ServicesCard = (props) => {
-const {title, color, desc, logo} = props;
+  const {
+    linkCol,
+    titCol,
+    descCol,
+    title,
+    color,
+    desc,
+    src,
+    alt,
+    width = 60,
+    height = 60,
+  } = props;
 
-    return (
-        <div className={`w-[430px] h-[445px] ${color} rounded-[20px]`}>
-            <div>
-                <img src={logo} alt="Service Icon" className="w-[50px] h-auto mt-10 ml-10"/>
-                <h1 className="text-[24px] font-bold text-white mt-5 ml-10">{title}</h1>
-                <p className="text-[16px] text-white mt-2 ml-10">{desc}</p>
-
-                <a href="#" className="text-[16px] text-[#B7FF00] font-bold mt-5 ml-10">
-                Selengkapnya
-                </a>
-            </div>
+  return (
+    <div
+      className={`flex flex-col justify-between w-[430px] h-[445px] ${color} rounded-[20px]`}
+    >
+      <div className="flex flex-col justify-between gap-3">
+        <div className="mx-12 mt-10">
+          <Image src={src} alt={alt} width={width} height={height} />
         </div>
-    )
-}
+        <h1 className={`text-[30px] font-semibold italic ${titCol} mt-5 mx-12`}>
+          {title}
+        </h1>
+        <p className={`text-[20px] ${descCol} mt-2 mx-12`}>{desc}</p>
+      </div>
+      <div className="py-10">
+        <a href="#" className={`text-[20px] ${linkCol} font-bold mt-5 mx-12`}>
+          Selengkapnya
+        </a>
+      </div>
+    </div>
+  );
+};
 
 export default ServicesCard;
