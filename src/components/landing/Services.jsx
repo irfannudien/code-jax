@@ -14,6 +14,8 @@ const Services = () => {
         <div>
             <div className="flex justify-center gap-10 pt-10">
                 <ServicesCard 
+                title="Wordpress Development"
+                desc=""
                 color="bg-[#204635]"
                 logo={wordpress}
                 />
